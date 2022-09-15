@@ -1,0 +1,61 @@
+code,key,message
+200,OK,Thao tác thành công
+400,BadRequest,Không thể thực hiện: %s
+401,Unauthorized,Không có quyền truy cập
+403,Forbidden,Không có quyền truy cập chức năng này
+404,NotFound,Không tìm thấy thông tin
+1000,Unknown,Lỗi không xác định
+1001,MissingRequiredMetadata,Thiếu metadata %s
+10014,InvalidCharacters,%s có kí tự không phù hợp
+1002,SessionExpired,Phiên làm việc đã hết hạn
+1003,NotAuthorize,Lỗi xác thực: %s
+1004,PermissionDenied,Không có quyền truy cập chức năng này
+1005,MethodNotFound,Chức năng không tồn tại
+1006,HubNotMatch,Không thể thao tác trên kho khác
+1007,Invalid,Thao tác không hợp lệ
+1008,DBError,Lỗi khi thao tác với cơ sở dữ liệu: %s
+1009,InvalidWithError,Không hợp lệ: %s
+1010,InvalidOrderCode,Mã đơn hàng không hợp lệ: %s
+1011,OrderCodeEmpty,Mã đơn hàng rỗng
+1013,AppVersionIsNotSupported,AppVersionIsNotSupported
+1014,AppVersionNotFound,AppVersionNotFound
+1015,AppVersionIsNotSupportedForHub,AppVersionIsNotSupportedForHub
+1016,ApiPartnerNotFound,Mã đối tác không tồn tại
+1017,InvalidRequest,Yêu cầu không hợp lệ: %s
+1018,MissingMandatory,Thông tin yêu cầu thiếu: %s
+1019,CallOnlineError,%s
+45000,AreaNotFound,Mã khu vực không tồn tại
+45001,LayoutNotFound,Phiên bản kho không tồn tại
+45002,ScheduleNotFound,Lịch làm việc kho không tồn tại
+45003,StaffNotInHub,%s không thuộc kho %s
+45004,UserNotFound,Mã nhân viên %s không tồn tại
+45005,InvalidTimeFormat,Thời gian không hợp lệ
+45006,FreeLancerIsNotFound,Số điện thoại không tồn tại
+45007,InvalidImportFile,File upload sai định dạng: %s
+45008,InvalidImportValue,Thông tin upload không đúng: %s
+45009,NotDeleteCurrentLayout,Không thể xóa layout đang làm việc
+45010,NotCheckinArea,Vui lòng check-in tại khu vực làm việc
+45011,EmptyImportValue,Thông tin cập nhật thiếu: %s
+45012,CanNotDeleteAppliedSchedule,Lịch làm việc đang áp dụng không thể xóa
+45013,AreaHasNoMore5Schedules,Khu vực không thể có hơn 5 lịch làm việc
+45014,NoUserSession,Không có thông tin nhân viên đang làm việc trong ca %s - %s
+45015,SessionNotFound,Không có thông tin nhân viên đang làm việc
+45016,NoActionInHub,Không tồn tại chức năng - %s
+45017,DuplicateSortCodeByAction, Thông tin cài đặt đã tồn tại trong file vui lòng kiểm tra lại - %s - %s - %s
+45018,RouteNotFound,Cấu hình âm thanh cho tuyến không tồn tại
+45019,NotRightConfigSoundFormatExcel,Tải lên file cấu hình âm thanh không đúng định dạng. Vui lòng sử dụng đúng định dạng theo file mẫu
+45020,DefaultLayoutNotFound, Chưa thiết lập layout. Vui lòng tạo layout trước khi sử dụng các chức năng
+45021,ForceEmployeeInShift, Chỉ có thể checkin tại khu vực %s. Vui lòng tới khu vực đó để thực hiện thao tác
+45022,InactiveArea, Khu vực chưa được kích hoạt. Vui lòng thử lại ở khu vực khác
+45023,CheckinTimeNotComing, Chưa tới thời gian làm việc. Vui lòng checkin đúng thời gian làm việc
+45024,NoNewCheckinIfWorking, Không thể checkin khu vực mới nếu đang trong ca làm việc
+45025,NotAllowIP, IP không hợp lệ. Vui lòng truy cập wifi GHN của kho để checkin
+45026,ExistedEmployeeInShift, Đã tồn tại ca làm việc %s tại khu vực %s cho nhân viên %s. Vui lòng điều chỉnh lịch làm việc của nhân viên trước khi tạo lịch làm việc mới
+45027,IsNotLeader, Chức năng thêm nhân viên chỉ cho phép trưởng khu vực thực hiện
+45028,NoShiftInArea, Khu vực hiện chưa có ca làm việc. Vui lòng sang khu vực khác để thực hiện checkin hoặc liên hệ với quản lý khu vực
+45029,CanScanYourself,Không thể quét mã của chính mình
+45030,CanNotScanLeader,Không thể quét mã leader khác
+45031,VersionNotFound,Phiên bản không tồn tại
+45032,CantDeleteAppliedVersion,Phiên bản đang được áp dụng không thể xóa
+45033,VersionExisted,Phiên bản đã tồn tại
+45034,VersionApplied,Phiên bản đã áp dụng

@@ -1,0 +1,10 @@
+env: "local"
+port: 8080
+database:
+  hosts:
+    - "localhost:27017"
+  username: "admin"
+  password: "admin"
+  authSource: "admin"
+productDbName: "product"
+storeDbName: "store"

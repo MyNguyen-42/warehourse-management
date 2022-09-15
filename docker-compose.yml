@@ -1,0 +1,31 @@
+version: '3.7'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo_compose
+    volumes:
+      - $HOME/mongodb:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - common
+    restart: always
+  warehouse-management-app:
+    image: warehouse-management
+    container_name: warehouse-management-app
+    depends_on:
+      - mongo
+    ports:
+      - "8080:8080"
+    working_dir: /app
+    environment:
+      APP_ENV: local
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: 'rabbitmq'
+    ports:
+      - 5672:5672
+      - 15672:15672
+networks:
+    common:
