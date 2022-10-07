@@ -1,6 +1,7 @@
 package controller
 
 import (
+	"context"
 	"fmt"
 	"github.com/labstack/echo/v4"
 	"net/http"
@@ -20,6 +21,18 @@ func GetWarehouse(c echo.Context) error {
 	return c.JSON(http.StatusOK, echo.Map{
 		"warehouse": warehouse,
 	})
+}
+
+func GetWarehouseNew(_ context.Context, _ *models.Warehouse) (*models.Warehouse, error) {
+
+	//warehouseId := c.Param("id")
+	if service.CheckIfWarehouseExists("wh03") == false {
+		return nil, nil
+	}
+	warehouse, _ := service.GetWarehouseById("wh03")
+
+	return &warehouse, nil
+
 }
 
 func ImportIntoWarehouse(c echo.Context) error {

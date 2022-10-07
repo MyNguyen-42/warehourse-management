@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "6323eb9564803212492bdc1f"
+  },
+  "warehouse_id": "wh01",
+  "products": [
+    {
+      "quantity": 1,
+      "product_id":"th"
+    },
+    {
+      "quantity": 32,
+      "product_id":"th"
+    }
+  ],
+  "name": "Nhà tui"
+},{
+  "_id": {
+    "$oid": "6323eb9564803212492bdc22"
+  },
+  "warehouse_id": "wh04",
+  "products": [
+    {
+      "quantity": 254,
+      "product_id":"th"
+    },
+    {
+      "quantity": 236,
+      "product_id":"th"
+    },
+    {
+      "product_id":"th",
+      "quantity": 84
+    },
+    {
+      "product_id":"th",
+      "quantity": 42
+    }
+  ],
+  "name": "Nhà Phương"
+},{
+  "_id": {
+    "$oid": "6323eb9564803212492bdc21"
+  },
+  "warehouse_id": "wh03",
+  "products": [
+    {
+      "quantity": 22,
+      "product_id":"th"
+    },
+    {
+      "quantity": 45,
+      "product_id":"th"
+    }
+  ],
+  "name": "Nhà anh hai tui"
+},{
+  "_id": {
+    "$oid": "6323eb9564803212492bdc20"
+  },
+  "warehouse_id": "wh02",
+  "products": [
+    {
+      "quantity": 12,
+      "product_id":"th"
+    },
+    {
+      "quantity": 12,
+      "product_id":"th"
+    }
+  ],
+  "name": "Nhà ba má tui"
+}]

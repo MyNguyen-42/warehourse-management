@@ -22,7 +22,6 @@ func AddRoute[Req interface{}, Resp interface{}](router *echo.Group, path string
 
 		return ResponseOK(c, resp)
 	})
-
 	//if docsGenerator != nil {
 	//	var req = new(Req)
 	//	_ = json.Unmarshal([]byte("{}"), req)

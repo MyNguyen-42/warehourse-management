@@ -1,6 +1,7 @@
 package conf
 
 import (
+	"fmt"
 	"github.com/spf13/viper"
 	"os"
 )
@@ -14,14 +15,12 @@ type (
 	}
 	Config struct {
 		Env           string   `mapstructure:"env,omitempty"`
-		Port          string   `mapstructure:"port,omitempty"`
+		Port          int      `mapstructure:"port,omitempty"`
 		Database      Database `mapstructure:"database,omitempty"`
 		ProductDbName string   `mapstructure:"productDbName,omitempty"`
 		StoreDbName   string   `mapstructure:"storeDbName,omitempty"`
 	}
 )
-
-var config *Config
 
 func LoadConfig(path string) (config Config, err error) {
 	viper.AddConfigPath(path)
@@ -35,18 +34,21 @@ func LoadConfig(path string) (config Config, err error) {
 	return
 }
 
+var config *Config
+
 func GetConfig() Config {
 	return *config
 }
 
-func LoadConfigFiles(path string) (config *Config) {
+func LoadConfigFiles(path string) *Config {
 	viper.AddConfigPath(path)
 	viper.SetConfigName("conf-" + os.Getenv("APP_ENV"))
 	viper.SetConfigType("yaml")
 	err := viper.ReadInConfig()
 	if err != nil {
-		return
+		return nil
 	}
 	err = viper.Unmarshal(&config)
-	return
+	fmt.Println(config)
+	return config
 }

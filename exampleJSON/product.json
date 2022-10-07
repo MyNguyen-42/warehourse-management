@@ -1,0 +1,25 @@
+[{
+  "product_id": "th",
+  "name": "nước khoáng th",
+  "price": "6000"
+},{
+  "product_id": "lavie",
+  "name": "lavie",
+  "price": "5000"
+},{
+  "product_id": "danisa",
+  "name": "danisa",
+  "price": "6000"
+},{
+  "product_id": "aquafina",
+  "name": "aquafina",
+  "price": "5000"
+},{
+  "product_id": "penx",
+  "name": "But mực xanh",
+  "price": "3000"
+},{
+  "product_id": "pen",
+  "name": "But mực",
+  "price": "3000"
+}]
